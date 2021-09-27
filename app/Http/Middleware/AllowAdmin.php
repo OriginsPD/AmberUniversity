@@ -17,9 +17,9 @@ class AllowAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(Auth::user()->is_admin !== 1){
-            return redirect("/");
-        }
+        // if(Auth::user()->is_admin !== 1){
+        //     return redirect("/");
+        // }
         return $next($request);
     }
 }

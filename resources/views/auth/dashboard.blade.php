@@ -3,12 +3,12 @@
 
 @section("content")
 
-    <div class="bg-black ">
+    <div class="bg-gray-700 ">
 
         <!-- component -->
         <div class="p-9   text-gray-700 font-sans quicksand ">
 
-            <h1 class="text-4xl mb-4"><span class=" border-b-4 border-pink-400 text-white text-center">Dashboard</span></h1>
+            <h1 class="text-4xl mb-4"><span class=" border-b-4 border-blue-400 text-white text-center">Dashboard</span></h1>
 
             <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 overflow-y-auto gap-4  ">
 
@@ -51,7 +51,7 @@
                                 @elseif ($course["is_approved"] === 0)
                                 <span>
 
-                                    <span class="font-extrabold text-orange-500 mb-5">Pending</span>
+                                    <span class="font-extrabold text-yellow-500 mb-5">Pending</span>
                                 </span>
                                 @endif
                             </div>
@@ -64,7 +64,7 @@
                             @if ($course["is_approved"] === 0)
 
                                     <div
-                                        class="text-white text-xl flex justify-center text-center bg-orange-500 w-full rounded py-2 inline-flex items-center md:mb-2 lg:mb-0">
+                                        class="text-white text-xl flex justify-center text-center bg-yellow-500 w-full rounded py-2 inline-flex items-center md:mb-2 lg:mb-0">
                                         <button class="h-full w-full outline-none focus:outline-none">Pending</button>
                                     </div>
 

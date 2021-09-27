@@ -10,14 +10,14 @@
 </head>
 <body>
 
-<div class="h-screen bg-black">
-<div class="bg-black justify-between items-center border-b-2 border-white flex h-14">
-
-    <div class="pl-4 text-white text-xl w-52"><a href="{{route("Profile")}}" class="p-2">{{Auth::user()->name}}</a></div>
-
+<div class="h-screen bg-blue-700">
+<div class="bg-white justify-between items-center border-b-2 border-white flex h-14">
+    @auth
+    <div class="pl-4 text-black text-xl uppercase font-semibold w-52"><a href="{{route("Profile")}}" class="p-2">{{Auth::user()->name}}</a></div>
+@endauth 
     <div class="flex text-white h-full items-center gap-1 w-96 justify-around">
-        <div><a href="/" class="p-2 bg-gray-800 rounded-md hover:text-black hover:bg-white duration-300 px-9">Home</a></div>
-        <div><a href="{{route('Dashboard')}}" class="p-2 bg-gray-800 px-6 hover:text-black hover:bg-white duration-300 rounded-md">Dashboard</a></div>
+        <div><a href="/" class="p-2 bg-white text-black rounded-md hover:text-black hover:bg-white duration-300 px-9">Home</a></div>
+        <div><a href="{{route('Dashboard')}}" class="p-2 bg-gray-800 px-6 hover:text-black hover:bg-black duration-300 rounded-md">Dashboard</a></div>
         <div><a href="{{route("Course-Selection")}}" class="p-2 bg-gray-800  hover:text-black hover:bg-white duration-300 rounded-md">Course Selection</a></div>
     </div>
 
@@ -26,7 +26,7 @@
         @auth
                 <form action="{{route('Logout')}}" method="post">
                     @csrf
-                    <button class="py-2 px-4 text-white rounded bg-red-600 hover:text-black hover:bg-white duration-300">Logout</button>
+                    <button class="py-2 px-4 text-white rounded bg-blue-600 hover:text-white hover:bg-blue-500 duration-300">Logout</button>
 
                 </form>
 

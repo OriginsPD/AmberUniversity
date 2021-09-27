@@ -28,7 +28,7 @@
                 @csrf
                 <div>
                     <label class="sr-only block text-gray-700" for="name"> Email Address </label>
-                    <input type="email" name="email" id="" placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-pink-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
+                    <input type="email" name="email" id="" placeholder="Enter Email Address" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none" autofocus autocomplete required>
                     @error("email")
                     <div class="text-red-700 mt-2 text-sm">
                         {{$message}}
@@ -38,7 +38,7 @@
 
                 <div class="mt-4">
                     <label class="sr-only block text-gray-700" for="password"> Password</label>
-                    <input type="password" name="password" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-pink-500
+                    <input type="password" name="password" id="" placeholder="Enter Password" minlength="6" class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
                 focus:bg-white focus:outline-none" required>
                     @error("password")
                     <div class="text-red-700 mt-2 text-sm">
@@ -57,14 +57,14 @@
                 @endif
 
 
-                <button type="submit" class="w-full block bg-pink-500 hover:bg-pink-400 focus:bg-pink-400 text-white font-semibold rounded-lg
+                <button type="submit" class="w-full block bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 text-white font-semibold rounded-lg
               px-4 py-3 mt-6">Log In</button>
             </form>
 
             <hr class="my-6 border-gray-300 w-full">
 
 
-            <p class="mt-8">Need an account? <a href="{{route("Register")}}" class="text-pink-500 hover:text-blue-700 font-semibold">Create an
+            <p class="mt-8">Need an account? <a href="{{route("Register")}}" class="text-blue-500 hover:text-blue-700 font-semibold">Create an
                     account</a></p>
 
 
