@@ -3,7 +3,7 @@
 @section('content')
 
     <div
-        class=" flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
+        class=" flex flex-col flex-auto flex-shrink-0 antialiased dark:bg-gray-700 text-black dark:text-white">
 
         <div>
 
@@ -82,8 +82,8 @@
                                         <div class="flex gap-3">
                                             <form action="{{route("Admin-Applicant-Action",$applicant["id"])}}" method="post">
                                                 @csrf
-                                                <button name="accept" value="1" class="bg-green-400 hover:bg-green-300 duration-300 rounded py-1 px-2">Accept</button>
-                                                <button name="reject" value="2" class="bg-red-500 hover:bg-red-400 duration-300 rounded py-1 px-2">Reject</button>
+                                                <button name="accept" value="1" class="bg-green-400 hover:bg-green-600 duration-300 rounded text-white py-1 px-2">Accept</button>
+                                                <button name="reject" value="2" class="bg-red-500 hover:bg-red-600 duration-300 rounded py-1 text-white px-2">Reject</button>
                                             </form>
 
                                         </div>

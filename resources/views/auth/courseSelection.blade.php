@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("content")
-    <div class="bg-black">
+    <div class="bg-blue-600">
 
         <!-- component -->
         <div class="p-9 text-gray-700 font-sans quicksand ">
@@ -32,13 +32,13 @@
 <div class="w-full flex items-center justify-between mt-4">
 
         @forelse($course["student_selection"] as $applyCheck)
-            @if ($applyCheck["user_id"] === Auth::id())
+            @if ($applyCheck["user_id"] == Auth::id())
                 <div
                     class="text-white text-xl flex justify-center text-center bg-green-500 w-full rounded py-2 inline-flex items-center md:mb-2 lg:mb-0">
                     <button class="h-full w-full outline-none focus:outline-none">Already Applied</button>
                 </div>
             @else
-                <form method="post" action="{{route("Course-Selection-Apply",$course["id"])}}"
+                <form  method="post" action="{{route("Course-Selection-Apply",$course["id"])}}"
                       class="text-white text-xl flex justify-center text-center bg-pink-500 w-full rounded py-2 inline-flex items-center md:mb-2 lg:mb-0">
                     @csrf
                     <button class="h-full w-full outline-none focus:outline-none">Apply</button>

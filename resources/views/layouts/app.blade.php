@@ -15,11 +15,11 @@
     @auth
     <div class="pl-4 text-black text-xl uppercase font-semibold w-52"><a href="{{route("Profile")}}" class="p-2">{{Auth::user()->name}}</a></div>
 @endauth 
-    <div class="flex text-white h-full items-center gap-1 w-96 justify-around">
-        <div><a href="/" class="p-2 bg-white text-black rounded-md hover:text-black hover:bg-white duration-300 px-9">Home</a></div>
-        <div><a href="{{route('Dashboard')}}" class="p-2 bg-gray-800 px-6 hover:text-black hover:bg-black duration-300 rounded-md">Dashboard</a></div>
-        <div><a href="{{route("Course-Selection")}}" class="p-2 bg-gray-800  hover:text-black hover:bg-white duration-300 rounded-md">Course Selection</a></div>
-    </div>
+    
+        <div><a href="/" class="p-2 bg-white text-black rounded-md hover:text-white hover:bg-black duration-300 px-9">Home</a></div>
+        <div><a href="{{route('Dashboard')}}" class="p-2 bg-white text-black px-6 hover:text-white hover:bg-black duration-300 rounded-md">Dashboard</a></div>
+        <div><a href="{{route("Course-Selection")}}" class="p-2 text-black bg-white hover:text-white hover:bg-black duration-300 rounded-md">Course Selection</a></div>
+    
 
     <div class="flex  items-center  justify-end pr-4 gap-5  w-52">
 

@@ -3,7 +3,7 @@
 
 @section("content")
 
-    <div class="bg-gray-700 ">
+    <div class="bg-blue-700 ">
 
         <!-- component -->
         <div class="p-9   text-gray-700 font-sans quicksand ">

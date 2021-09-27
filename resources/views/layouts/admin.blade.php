@@ -13,50 +13,50 @@
 <body>
 
 
-<div class=" flex h-screen border border-black">
+<div class=" flex h-screen border bg-blue-600">
 
     <div>
 
 
-        <div class="flex flex-col top-14 left-0 w-14 hover:w-64 md:w-64 bg-black h-full text-white transition-all duration-300 border-none z-10 sidebar">
+        <div class="flex flex-col top-14 left-0 w-14 text-black hover:w-64 md:w-64 bg-white h-full text-white transition-all duration-300 border-none z-10 sidebar">
             <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
                 <ul id="list" class="flex flex-col py-5 space-y-2">
                     <li class="px-5 mt-4 hidden md:block">
                         <div class="flex flex-col items-center h-8 ">
-                            <a href="{{route("Admin")}}"><p class="text-2xl font-extrabold"><span class="text-pink-600">Pix</span>-<span class="text-yellow-400">Ac</span><span class="text-green-400">ade</span><span class="text-gray-600">my</span></p></a>
+                            <a href="{{route("Admin")}}"><p class="text-2xl font-extrabold"><span class="text-blue-600"></span><span class="text-yellow-400">ADMIN</span><span class="text-green-400"></span><span class="text-gray-600"></span></p></a>
                         </div>
                     </li>
 
 
                     <li class="pt-36">
-                        <button id="applicants-btn" class="relative w-full flex flex-row items-center inactive h-11 focus:outline-none hover:bg-pink-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-pink-500 dark:hover:border-gray-800 pr-6">
+                        <button id="applicants-btn" class="relative w-full flex flex-row items-center inactive bg-blue-700 h-11 focus:outline-none hover:bg-blue-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                 <span class="inline-flex justify-center items-center ml-4">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg>
                 </span>
-                            <span class="ml-2 text-sm tracking-wide truncate">Applicants</span>
+                            <span class="ml-2 text-sm tracking-wide truncate">Student Applicants</span>
                         </button>
                     </li>
 
                     <li>
-                        <button id="course-btn" class="relative w-full flex flex-row items-center inactive h-11 focus:outline-none hover:bg-pink-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-pink-500 dark:hover:border-gray-800 pr-6">
+                        <button id="course-btn" class="relative w-full flex flex-row items-center inactive h-11 focus:outline-none hover:bg-blue-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                 <span class="inline-flex justify-center items-center ml-4">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                 </span>
-                            <span class="ml-2 text-sm tracking-wide truncate">Courses</span>
+                            <span class="ml-2 text-sm tracking-wide truncate">Offered Courses</span>
                         </button>
                     </li>
 
                     <li>
-                        <button id="institution-btn" class="relative w-full flex flex-row items-center inactive h-11 focus:outline-none hover:bg-pink-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-pink-500 dark:hover:border-gray-800 pr-6">
+                        <button id="institution-btn" class="relative w-full flex flex-row items-center inactive h-11 focus:outline-none hover:bg-blue-800 duration-500 dark:hover:bg-gray-600 text-white-600 hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
                 <span class="inline-flex justify-center items-center ml-4">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
                 </span>
-                            <span class="ml-2 text-sm tracking-wide truncate">Type Of Course</span>
+                            <span class="ml-2 text-sm tracking-wide truncate">Type Of Category</span>
                         </button>
                     </li>
 
                     <li>
-                        <form method="post" action="{{route("Logout")}}"  class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-red-600 dark:hover:bg-gray-600 text-white-600 duration-500 hover:text-white-800 border-l-4 border-transparent hover:border-pink-500 dark:hover:border-gray-800 pr-6 w-full">
+                        <form method="post" action="{{route("Logout")}}"  class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-red-600 dark:hover:bg-gray-600 text-white-600 duration-500 hover:text-white border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6 w-full">
                             @csrf
                             <button class="inline-flex w-full h-full outline-none focus:outline-none  justify-start items-center ml-4">
                 <span>
@@ -89,7 +89,7 @@
         <div>
             <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 p-4 gap-4">
                 <div
-                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-pink-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -105,7 +105,7 @@
                 </div>
                 <div
                     id="course_card_btn"
-                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300  dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-pink-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300  dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -124,7 +124,7 @@
 
                 <div
                     id="payment_activity_card_btn"
-                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-pink-600 dark:border-gray-600 text-white font-medium group">
+                    class="bg-black cursor-pointer hover:bg-gray-800 duration-300 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
                     <div
                         class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor"

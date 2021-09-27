@@ -13,7 +13,7 @@
 
         <div class="w-11/12 text-white shadow-2xl">
 
-            <h1 class="text-4xl mb-6 font-bold text-center "><span class="border-b-4 border-pink-400">Update Profile</span></h1>
+            <h1 class="text-4xl mb-6 font-bold text-center "><span class="border-b-4 border-green-200">Update Profile</span></h1>
             <h3 class="text-md text-center mb-10">Use the form below to edit your profile</h3>
 
 
@@ -60,7 +60,7 @@
 
 
                 <div>
-                    <button type="submit" class="bg-pink-500  hover:bg-pink-700 duration-300 text-white p-4 w-full  shadow-2xl">Update</button>
+                    <button type="submit" class="bg-green-500  hover:bg-green-700 duration-300 text-white p-4 w-full  shadow-2xl">Update</button>
                 </div>
 
             </form>
