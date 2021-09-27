@@ -18,7 +18,7 @@
     <div>
 
 
-        <div class="flex flex-col top-14 left-0 w-14 text-black hover:w-64 md:w-64 bg-pink-500 h-full text-white transition-all duration-300 border-none z-10 sidebar">
+        <div class="flex flex-col top-14 left-0 w-14 text-black hover:w-64 md:w-64 bg-white h-full text-white transition-all duration-300 border-none z-10 sidebar">
             <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
                 <ul id="list" class="flex flex-col py-5 space-y-2">
                     <li class="px-5 mt-4 hidden md:block">

@@ -44,10 +44,10 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
-        'AllowAdmin' => [
+        'BlockAdmin' => [
             \App\Http\Middleware\AllowAdmin::class,
         ],
-        'AllowUser' => [
+        'BlockUser' => [
             \App\Http\Middleware\AllowUser::class,
 
         ],

@@ -35,11 +35,11 @@ Route::post("/register/store",[RegisterController::class,"store"]);
 Route::post("/logout",[LogoutController::class,"logout"])->name("Logout");
 
 
-Route::group(["middleware" => "AllowUser"], function () {
-
     Route::get('/', function () {
         return view('index');
     });
+
+Route::group(["middleware" => "BlockAdmin"], function () {
 
     Route::get("/dashboard", [DashboardController::class, "index"])->name("Dashboard");
 
@@ -56,7 +56,7 @@ Route::group(["middleware" => "AllowUser"], function () {
 
 
 // Admin
-Route::group(["middleware" => "AllowAdmin"], function (){
+Route::group(["middleware" => "BlockUser"], function (){
 
     Route::get("/admin/index",[AdminController::class,"index"])->name("Admin");
     Route::post("/admin/addCourse",[AdminController::class,"addCourse"])->name("Admin-Add-Course");
