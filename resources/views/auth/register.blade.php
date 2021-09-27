@@ -3,14 +3,16 @@
 
 @section("content")
 
-    <div class="flex justify-center">
+    <div class="flex bg-black justify-center">
 
-        <div class="w-4/12 bg-gray-200 rounded-lg shadow-2xl">
+        <div class="w-4/12 bg-gray-200 p-10 my-8 rounded-lg shadow-2xl">
 
             <form method="post" action="{{url('/register/store')}}">
                 @csrf
                 <div class="mb-4 ">
-
+                    <div class="mb-4 text-xl font-bold">
+                        Sign Up
+                    </div>
                     <label class="sr-only" for="name"> Name </label>
                     <input type="text" placeholder="Enter Name" class="bg-white p-4 w-full rounded-md border-2 border-gray-400 @error('name') border-red-700 @enderror" name="name">
                     @error("name")

@@ -13,7 +13,7 @@
 <section class="flex flex-col md:flex-row h-screen items-center">
 
     <div class="bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen">
-        <img src="https://source.unsplash.com/random" alt="" class="w-full h-full object-cover">
+        <img src="https://cdn.pixabay.com/photo/2016/07/26/19/05/pokemon-1543556_960_720.jpg" alt="" class="w-full h-full object-cover">
     </div>
 
     <div class="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12
@@ -22,7 +22,7 @@
         <div class="w-full h-100">
 
 
-            <h1 class="text-xl md:text-2xl font-bold leading-tight mt-12">Log in to your account</h1>
+            <h1 class="text-xl md:text-2xl font-bold leading-tight mt-12">Welcome Back We Missed You</h1>
 
             <form class="mt-6" action="{{route("On-Login")}}" method="POST">
                 @csrf
