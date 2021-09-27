@@ -19,6 +19,6 @@ class Course extends Model
     }
 
     public function student_selection(){
-        return $this->hasMany(StudentSelection::class,"course_id","id")->with("user");
+        return $this->hasOne(StudentSelection::class,"course_id","id")->with("user");
     }
 }

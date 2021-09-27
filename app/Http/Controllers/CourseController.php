@@ -13,8 +13,8 @@ class CourseController extends Controller
     public function index() {
 
         $courses = Course::with(["student_selection","typeOfCourse"])->get()->toArray();
-//dd($courses);
-        return view("auth.courseSelection",compact("courses",));
+
+        return view("auth.courseSelection",compact("courses"));
     }
 
     public function apply(Request $request,$id) {

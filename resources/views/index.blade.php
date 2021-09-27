@@ -15,7 +15,7 @@
 
                 <div class="flex justify-center mt-8">
                     {{--        TODO Animated Scroll To Section--}}
-                    <a class="px-8 py-2 text-lg text-center font-medium text-white transition-colors duration-300 transform bg-pink-700 rounded hover:bg-pink-600"
+                    <a class="px-8 py-2 text-lg text-center font-medium text-white transition-colors duration-300 transform bg-blue-700 rounded hover:bg-pink-600"
                        href="{{route("Course-Selection")}}">Apply Now</a>
                 </div>
             </div>

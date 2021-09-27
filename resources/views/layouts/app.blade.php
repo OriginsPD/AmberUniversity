@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="h-screen bg-blue-700">
+<div class="h-screen bg-black">
 <div class="bg-white justify-between items-center border-b-2 border-white flex h-14">
     @auth
     <div class="pl-4 text-black text-xl uppercase font-semibold w-52"><a href="{{route("Profile")}}" class="p-2">{{Auth::user()->name}}</a></div>
@@ -18,8 +18,7 @@
     
         <div><a href="/" class="p-2 bg-white text-black rounded-md hover:text-white hover:bg-black duration-300 px-9">Home</a></div>
         <div><a href="{{route('Dashboard')}}" class="p-2 bg-white text-black px-6 hover:text-white hover:bg-black duration-300 rounded-md">Dashboard</a></div>
-        <div><a href="{{route("Course-Selection")}}" class="p-2 text-black bg-white hover:text-white hover:bg-black duration-300 rounded-md">Course Selection</a></div>
-    
+        <div><a href="{{route("Course-Selection")}}" class="p-2 text-black bg-white hover:text-white hover:bg-black duration-300 rounded-md">Course Selection</a></div>    
 
     <div class="flex  items-center  justify-end pr-4 gap-5  w-52">
 
